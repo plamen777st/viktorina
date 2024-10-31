@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина: Тела и вещества</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Картинка на героя Знайко -->
+        <img src="Designer.jpeg" alt="Знайко" class="znayko">
+        
+        <!-- Поле за точките -->
+        <div id="score-box">Точки: <span id="score">0</span></div>
+
+        <!-- Поле за въпросите -->
+        <div id="question-box">
+            <p id="question">Въпросът ще се покаже тук</p>
+            <div id="answers">
+                <!-- Тук ще се генерират отговорите динамично -->
+            </div>
+        </div>
+
+        <!-- Бутон за следващия въпрос -->
+        <button id="next-button" onclick="nextQuestion()" style="display: none;">Следващ въпрос</button>
+    </div>
+
+    <!-- Финално съобщение при край на играта -->
+    <div id="end-message" style="display: none;">
+        <p id="final-score"></p>
+        <p id="final-message"></p>
+        <img id="emoji" src="" alt="Емотикон">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
